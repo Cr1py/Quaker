@@ -1,4 +1,4 @@
-# Quake Pipeline
+# Quaker
  
 I grew up in Vancouver, so the fear of the **BIG ONE** is real. Quaker is a real-time earthquake "tool" designed to pull USGS seismic data into a visual alert. Quaker uses Java, Kafka (KRaft), Schema Registry with Avro, Docker Compose, and (soon) Kafka Streams, PostGIS, and Grafana. Kafka is the foundation of this project so enrichment, alerting, and analytics are all just consumers of the same stream. Quakes get revised after the fact (a 4.8 becomes a 5.1), so the pipeline is built to handle updates without double counting or double alerting.
  
