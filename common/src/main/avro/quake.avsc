@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "quaker",
+  "namespace": "quaker.model",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "time", "type": "long", "doc": "origin time, epoch ms"},
+    {"name": "updated", "type": "long", "doc": "last update, epoch ms"},
+    {"name": "mag", "type": ["null", "double"], "default": null},
+    {"name": "magType", "type": ["null", "string"], "default": null},
+    {"name": "place", "type": ["null", "string"], "default": null},
+    {"name": "lat", "type": "double"},
+    {"name": "lon", "type": "double"},
+    {"name": "depth", "type": ["null", "double"], "default": null},
+    {"name": "tsunami", "type": "int", "default": 0},
+    {"name": "felt", "type": ["null", "int"], "default": null},
+    {"name": "status", "type": ["null", "string"], "default": null},
+    {"name": "revision", "type": "boolean", "default": false},
+    {"name": "geohash", "type": ["null", "string"], "default": null},
+    {"name": "region", "type": ["null", "string"], "default": null},
+    {"name": "depthClass", "type": ["null", "string"], "default": null}
+  ]
+}
